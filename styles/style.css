@@ -5,11 +5,32 @@
 }
 
 body {
+  font-family: sans-serif;
   background-color: aquamarine;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #cards-container {
-  border: black solid 5px;
-  height: 100vh;
-  margin: 25px;
+  /*wrapper*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards {
+  overflow: hidden;
+  background: rgba(80, 227, 194, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 340px; /*Makes wrapper work*/
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  position: relative;
+  padding: 5% 5%;
 }
